@@ -15,6 +15,7 @@ import (
 type ErrorType int // Type of error.
 
 const (
+	authHeader                = "Authorization"
 	contentEncoding           = "Content-Encoding"
 	contentType               = "Content-Type"
 	gzipString                = "gzip"

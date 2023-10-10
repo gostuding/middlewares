@@ -9,7 +9,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/gostuding/go-metrics/internal/server/middlewares/mocks"
+	"github.com/gostuding/middlewares/mocks"
 	"go.uber.org/zap"
 )
 

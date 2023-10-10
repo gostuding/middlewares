@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gostuding/go-metrics/internal/server/middlewares/mocks"
+	"github.com/gostuding/middlewares/mocks"
 	"github.com/stretchr/testify/assert"
 )
 
