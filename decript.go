@@ -70,7 +70,7 @@ func DecriptMiddleware(
 ) func(h http.Handler) http.Handler {
 	return func(next http.Handler) http.Handler {
 		fn := func(w http.ResponseWriter, r *http.Request) {
-			if key != nil && r.Method == http.MethodPost {
+			if key != nil && (r.Method == http.MethodPost || r.Method == http.MethodPut) {
 				data, err := io.ReadAll(r.Body)
 				if err != nil {
 					logger.Warnf(getError(ReadBodyError, err).Error())
